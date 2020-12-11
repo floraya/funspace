@@ -1,6 +1,6 @@
 $(function () {
     "use strict";
-    // Burger Menu 
+    // Burger Menu
     var burgerMenu = function () {
         $('.js-addo-nav-toggle').on('click', function (event) {
             event.preventDefault();
@@ -60,7 +60,7 @@ $(function () {
         , autoplay: true
         , smartSpeed: 500
     });
-    
+
     // Clients owlCarousel
     $('.clients .owl-carousel').owlCarousel({
         loop:true,
@@ -82,7 +82,7 @@ $(function () {
             }
         }
     });
-    
+
     // Team owlCarousel
     $('.team .owl-carousel').owlCarousel({
         loop: true,
@@ -105,7 +105,7 @@ $(function () {
             }
         }
     });
-    
+
     // Project owlCarousel
     $('.projects .owl-carousel').owlCarousel({
         loop: true
@@ -126,7 +126,7 @@ $(function () {
             }
         }
     });
-    
+
     // Testimonials owlCarousel
     $('.testimonials .owl-carousel').owlCarousel({
         loop: true
@@ -147,7 +147,7 @@ $(function () {
             }
         }
     });
-    
+
     // YouTubePopUp
     $("a.vid").YouTubePopUp();
 });
@@ -183,7 +183,7 @@ $(window).on("load", function () {
         }
     });
 });
-// Slider 
+// Slider
 $(document).ready(function () {
     var owl = $('.header .owl-carousel');
     // Slider owlCarousel
@@ -219,4 +219,9 @@ $(document).ready(function () {
         $('.owl-item').not('.cloned').eq(item).find('p').addClass('animated fadeInUp');
         $('.owl-item').not('.cloned').eq(item).find('.btn').addClass('animated zoomIn');
     });
+});
+// 新增 lightbox
+$(document).on("click", '[data-toggle="lightbox"]', function (event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
 });
