@@ -865,6 +865,7 @@ h6 {
 /* =======  Post  ======= */
 .post .item {
     margin-bottom: 0px;
+    display: block;
 }
 .post .item .post-img {
     overflow: hidden;
